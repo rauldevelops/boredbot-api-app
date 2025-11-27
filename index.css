@@ -1,0 +1,53 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: grey;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1.5px;
+    height: 100vh;
+    background-image: linear-gradient(grey, black)
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.container {
+    padding: 0 2em;
+    margin: 0 auto;
+}
+
+header {
+    padding-top: 20px;
+    text-align: center;
+    text-shadow: 0 0 4px black;
+}
+
+button {
+    margin-top: 1em;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: darkred;
+    box-shadow: 0 0 12px black;
+}
+
+button:hover,
+button:focus {
+    background-color: red;
+    box-shadow: 0 0 12px white;
+}
