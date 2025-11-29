@@ -6,12 +6,19 @@ html,
 body {
     padding: 0;
     margin: 0;
-    background-color: grey;
+    text-align: center;
+    text-shadow: 0 0 4px black;
     color: white;
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 1.5px;
     height: 100vh;
     background-image: linear-gradient(grey, black)
+}
+
+
+.fun-bot {
+    background: linear-gradient(yellow, orange, red);
+    font-family: 'Comic Relief', sans-serif;
 }
 
 h1 {
@@ -30,8 +37,6 @@ h2 {
 
 header {
     padding-top: 20px;
-    text-align: center;
-    text-shadow: 0 0 4px black;
 }
 
 button {

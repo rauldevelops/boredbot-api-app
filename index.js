@@ -11,7 +11,13 @@ const activity = document.getElementById('activity')
 const activityBtn = document.getElementById('activity-btn')
 
 activityBtn.addEventListener('click', function() {
-  console.log("Triggering GET request to Bored API!")
+  document.getElementById('bot-name').textContent = '🥳FunBot🥳'
+  document.querySelector('body').classList.add('fun-bot')
+  fetch("https://apis.scrimba.com/bored/api/activity")
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById("activity").textContent = data.activity
+    })
 })
 
 // fetch("https://apis.scrimba.com/bored/api/activity")
